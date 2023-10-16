@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-
+ 
 namespace PrimeNumber
 {
     internal class Program
@@ -13,19 +13,20 @@ namespace PrimeNumber
         {
             int[] arrayWithDuplicateValues = { 23, 56, 78, 23, 56,67, 89 };
             
-            
             var size = arrayWithDuplicateValues.Length;
             for (int i = 0; i < size; i++)
             {
                 int temp = 0;
                 for (int j = i + 1; j < size; j++)
                 {
+                    // Removing duplications
                     if (arrayWithDuplicateValues[i] == arrayWithDuplicateValues[j])
                     {
                         size--;
                         arrayWithDuplicateValues[j] = arrayWithDuplicateValues[size];
                         j--;
                     }
+                    // Sorting Array
                     if (arrayWithDuplicateValues[j] < arrayWithDuplicateValues[i])
                     {
                         temp = arrayWithDuplicateValues[i];
