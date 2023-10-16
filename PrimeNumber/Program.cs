@@ -11,7 +11,7 @@ namespace PrimeNumber
     {
         static void Main(string[] args)
         {
-            int[] arrayWithDuplicateValues = { 23, 56, 78, 23, 56,67, 89 };
+            int[] arrayWithDuplicateValues = { 23, 56, 78, 23, 56,67, 89,101,1,2,6,6,7 };
             
             var size = arrayWithDuplicateValues.Length;
             for (int i = 0; i < size; i++)
